@@ -5,7 +5,7 @@ class EmailService {
         const mailOptions = {
             from: process.env.SMTP_USER,
             to: email,
-            subject: "Confirmación de envío",
+            subject: "ConfirmaciÃ³n de envÃ­o",
             text: `Hola ${fullName}, tu formulario ha sido recibido correctamente.`,
         };
 
