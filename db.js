@@ -1,4 +1,4 @@
-const mysql = require('mysql2'); // Si usas PostgreSQL: const { Pool } = require('pg');
+ï»¿const mysql = require('mysql2'); // Si usas PostgreSQL: const { Pool } = require('pg');
 
 const pool = mysql.createPool({
     host: process.env.DB_HOST,
@@ -9,12 +9,12 @@ const pool = mysql.createPool({
 
 });
 
-// Verificar la conexión
+// Verificar la conexiÃ³n
 pool.getConnection((err, connection) => {
     if (err) {
-        console.error("Error de conexión a la base de datos:", err.message);
+        console.error("Error de conexiÃ³n a la base de datos:", err.message);
     } else {
-        console.log("Conexión a la base de datos establecida correctamente.");
+        console.log("ConexiÃ³n a la base de datos establecida correctamente.");
         connection.release();
     }
 });
