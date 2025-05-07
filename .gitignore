@@ -1,0 +1,3 @@
+# Ignorar archivos de configuración de Visual Studio
+.vs/
+.env
